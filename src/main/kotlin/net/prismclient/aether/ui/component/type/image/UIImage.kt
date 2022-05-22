@@ -32,6 +32,4 @@ class UIImage(var name: String, val image: UIImageData, style: String) : UICompo
             )
         }
     }
-
-
 }

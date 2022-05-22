@@ -6,8 +6,10 @@ import net.prismclient.aether.ui.component.type.layout.list.UIListLayout.ListOri
 import net.prismclient.aether.ui.component.type.layout.styles.UIContainerSheet
 
 /**
- * [UIListLayout] is a layout class which stacks components in a Given
- * direction and orientation.
+ * [UIListLayout] is a layout class which stacks components in a given
+ * direction and orientation. Set the [listDirection] to configure which
+ * direction to lay out the components. Configure the [listOrientation] to
+ * define how the order of the lists is: first, or last component.
  *
  * @author sen
  * @since 5/20/2022
@@ -17,7 +19,6 @@ open class UIListLayout @JvmOverloads constructor(
         var listOrientation: ListOrientation = ListOrientation.Forward,
         style: String
 ) : UIContainer<UIContainerSheet>(style) {
-
     override fun updateLayout() {
         var x = 0f
         var y = 0f
